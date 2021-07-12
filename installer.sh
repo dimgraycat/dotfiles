@@ -21,7 +21,6 @@ step2 () {
         bat \
         starship \
         anyenv \
-        docker-compose \
         awscli \
         mysql \
         brew-php-switcher \
