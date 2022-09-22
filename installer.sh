@@ -32,9 +32,6 @@ step2 () {
 
     cp ~/work/dotfiles/.zshrc ~/.zshrc
 
-    # fzf install
-    $(brew --prefix)/opt/fzf/install
-
     echo "next step: $ sh ~/work/dotfiles/installer.sh step3"
 }
 
@@ -45,12 +42,12 @@ step3 () {
     # node setup
     anyenv install nodenv
     nodenv install 10.23.0
+    nodenv rehash
 
     # yarn
     npm install -g yarn
 
     echo "next step: $ sh ~/work/dotfiles/installer.sh step4"
-    nodenv rehash
 }
 
 step4 () {
@@ -71,7 +68,7 @@ step4 () {
 }
 
 case "$1" in
-    "step2") step1 ;;
+    "step1") step1 ;;
     "step2") step2 ;;
     "step3") step3 ;;
     "step4") step4 ;;
