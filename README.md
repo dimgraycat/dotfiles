@@ -24,8 +24,9 @@ $ sh ~/work/dotfiles/installer.sh step1
  ```
 
 ## add coc-config
+ `:CocConfig`
  ```json
 {
-    "html.filetypes": ["html","handlebars","htmldjango","blade","ctp"],
+    "html.filetypes": ["html","handlebars","htmldjango","blade","ctp"]
 }
  ```
